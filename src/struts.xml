@@ -1,0 +1,16 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default"  extends="struts-default">
+        <action name="loginAction" class="edu.login.Action.LoginAction">
+            <result name="success">/mainFrame/main.jsp</result>
+            <result name="input">/login/index.jsp</result>
+            <result name="error">/login/index.jsp</result>
+        </action>
+       
+    </package>
+</struts>
+
